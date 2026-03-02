@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Seatwork 2 Third Quarter</title>
+    <style>
+
+        h2 {
+            font-size: 35px;
+            background-color: rgb(169, 115, 74);
+            border-radius: 10px;
+        }
+
+        form {
+           background-color: rgb(13, 87, 137);
+           border-radius: 10px;
+           padding: 40px ;
+           margin: 0 auto;
+           width: 700px;
+           text-align: center;
+       }
+
+        body {
+           font-family: 'Courier New', Courier, monospace;
+           color: rgb(221, 229, 233);
+           background-color: rgb(159, 93, 22);
+       }
+
+    </style>
+</head>
+<body>
+    
+    <form>
+
+        <h2>Intramurals Team Checker</h2>
+
+        <!-- Online Registratiom check -->
+
+        <div container="mt-3">
+        <label for="acc_register">Have you <u><strong>accomplished</strong></u> the online registration process?</label>
+        <br>
+
+        <input type="radio" id="yesnt1a" value="1" name="online_reg">
+        <label for="yesnt1a">Yes</label>
+        <br>
+
+        <input type="radio" id="yesnt2a" value="2" name="online_reg">
+        <label for="yesnt2a">No</label>
+        <br>
+        <br>
+        </div>
+
+        <!-- Medical Clearance check -->
+        
+        <div container="mt-3">
+        <label for="medi_clear">Do you have <u><strong>medical clearance</strong></u> from the clinic?</label>
+        <br>
+
+        <input type="radio" id="yesnt1b" value="3" name="med_cert">
+        <label for="yesnt1b">Yes</label>
+        <br>
+
+        <input type="radio" id="yesnt2b" value="4" name="med_cert">
+        <label for="yesnt2b">No</label>
+        <br>        
+        </div>
+        <br>
+
+        <!-- Grade & Section -->
+
+        <div container="mt-3">
+            <label for="sort_grade"><strong>Grade:</strong></label>
+            <br>
+
+            <input type="radio" id="pito" name="Grade" value="7">
+            <label for="pito">7</label>
+            <br>
+
+            <input type="radio" id="walo" name="Grade" value="8">
+            <label for="walo">8</label>
+            <br>
+
+            <input type="radio" id="siyam" name="Grade" value="9">
+            <label for="siyam">9</label>
+            <br>
+
+            <input type="radio" id="sampu" name="Grade" value="10">
+            <label for="sampu">10</label>
+            <br>
+        </div>
+        <br>
+
+        <div container="mt-3">
+            <label for="sort_sect"><strong>Section:</strong></label>
+            <br>
+
+            <input type="radio" id="eme" name="Section" value="11">
+            <label for="eme">Emerald</label>
+            <br>
+
+            <input type="radio" id="ruby" name="Section" value="12">
+            <label for="ruby">Ruby</label>
+            <br>
+
+            <input type="radio" id="sapph" name="Section" value="13">
+            <label for="sapph">Sapphire</label>
+            <br>
+
+            <input type="radio" id="topaz" name="Section" value="14">
+            <label for="topaz">Topaz</label>
+            <br>
+        </div>
+
+        <button type="button" py-click="register_select" value="Register" style="color: rgb(169, 115, 74);">Register</button>
+
+    </form>
+
+    <div id="output"></div>
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
