@@ -1,4 +1,4 @@
-from pyscript import display
+from pyscript import display, document
 
 def register_select(e):
     document.getElementById('output').innerHTML = " "
